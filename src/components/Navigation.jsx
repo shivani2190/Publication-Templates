@@ -2,12 +2,10 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const NavContainer = styled.nav`
-  background-color: rgba(156, 39, 176, 0.9);
   padding: 1.5rem 0;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
 `;
 
