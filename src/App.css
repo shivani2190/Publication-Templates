@@ -120,6 +120,136 @@
   transform: scale(1.01);
 }
 
+.database-tabs {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin: 0 auto 2rem;
+  -webkit-overflow-scrolling: touch;
+  justify-content: center;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.database-tab {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background: white;
+  color: #2c3e50;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.database-tab:hover {
+  background: #e9ecef;
+}
+
+.database-tab.active {
+  background: #3498db;
+  color: white;
+}
+
+.filters-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.filters-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.search-filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-card {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.filter-card:hover {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-card label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.filter-card select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.filter-card select:hover {
+  border-color: #3498db;
+}
+
+.filter-card select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.clear-filters {
+  display: block;
+  margin: 1rem auto 0;
+  padding: 0.75rem 1.5rem;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-filters:hover {
+  background: #c0392b;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .filters-section {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .search-filters {
+    gap: 1rem;
+  }
+  
+  .filters-title {
+    font-size: 1.25rem;
+  }
+}
+
 .templates-grid,
 .bookings-grid,
 .articles-list,
@@ -142,6 +272,48 @@
     margin-top: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+}
+
+.journal-card {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.journal-card:hover {
+  transform: translateY(-5px);
+}
+
+.journal-details {
+  margin-top: 1rem;
+}
+
+.journal-details p {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.journal-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.journal-links a {
+  color: #3498db;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.journal-links a:hover {
+  background: #3498db;
+  color: white;
 }
 
 .template-card,
