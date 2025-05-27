@@ -344,31 +344,45 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background: transparent;
+  background: #f8f9fa;
   border: none;
+  border-radius: 6px;
   cursor: pointer;
-  padding: 6px;
-  opacity: 0.6;
-  transition: all 0.2s ease;
+  padding: 8px;
+  transition: all 0.3s ease;
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #2c3e50;
 }
 
 .copy-button svg {
   width: 18px;
   height: 18px;
-  stroke: #666;
-}
-
-.copy-button:hover {
-  opacity: 1;
+  transition: all 0.3s ease;
 }
 
 .copy-button:hover {
   background: #e9ecef;
   transform: scale(1.05);
+}
+
+.copy-button:hover {
+  background: #e9ecef;
+  transform: scale(1.05);
+}
+
+.copy-button.copied {
+  background: #2ecc71;
+  color: white;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
 }
 
 .copy-button.copied svg {
